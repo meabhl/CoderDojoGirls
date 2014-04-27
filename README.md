@@ -8,3 +8,5 @@ pianoGame: Modification of the piano came developed by Catrina Carrigan in Coder
 DISCLAIMER:
 Teaching notes are missing in a lot of cases. The finished code for a week often has mistakes in it (some on purpose!).
 All code was uploaded as we finished a class and there may be gaps between weeks as Instructors swapped around.
+
+More detail on sessions here: http://coderdojodcu.com/sessions/girls/previous/
