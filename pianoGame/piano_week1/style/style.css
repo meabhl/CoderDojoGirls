@@ -1,0 +1,35 @@
+body{
+background-color:black;
+margin:0;
+font-family:Arial, sans-serif;
+font-weight:400;
+}
+
+div.pianoTop{
+background:url("../images/top.jpg") ;
+margin-bottom:0;
+padding-bottom:50px;
+padding-top:30px;
+width:auto;
+height:40px;
+
+}
+
+div.rockStar{
+
+width:600px;
+margin-left:auto;
+margin-right:auto;
+
+}
+
+.heading{
+
+color:white;
+display:block;
+float:left;
+font-size:40px;
+line-height:1;
+top:40px;
+
+}

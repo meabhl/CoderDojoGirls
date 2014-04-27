@@ -1,0 +1,45 @@
+#keyC {
+	background-color: pink;
+}
+#keyD {
+	background-color: turquoise;
+}
+#keyE {
+	background-color: green;
+}
+#keyF {
+	background-color: orange;
+}
+#keyG {
+	background-color: purple;
+}
+#keyA {
+	background-color: red;
+}
+#keyB {
+	background-color: yellow;
+}
+#keyC1 {
+	background-color: skyblue;
+}
+#keyD1 {
+	background-color: lime;
+}
+#keyE1 {
+	background-color: magenta;
+}
+#keyF1 {
+	background-color: indigo;
+}
+.sharp {
+	background-image: url('../images/coderdojogirls_logo.png');
+	background-repeat: repeat-all;
+	
+}
+
+.keyText, .sharpText {
+	color: black;	
+}
+div.rockStar {
+	width: 800px;
+}

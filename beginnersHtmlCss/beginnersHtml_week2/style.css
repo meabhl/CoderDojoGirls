@@ -1,0 +1,26 @@
+
+
+
+
+body{
+ background-color:#cc0AC9;
+ color:white;
+}
+h1{
+color:#20630D;
+}
+p{
+ color:blue;
+ font-size:12px;
+ font-family:Georgia;
+ 
+}
+iframe{
+frameborder:1;
+}
+img{
+height:150px;
+width:200px;
+}
+
+

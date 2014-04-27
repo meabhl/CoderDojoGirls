@@ -1,0 +1,110 @@
+body {
+	background-color: lightgreen;
+	color: darkblue;
+}
+
+div#flower {
+	width: 100px;
+	background-color: yellow;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: url('wateringCan.cur');
+}
+
+
+div#container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+h1:hover {
+	text-align: center;
+	text-shadow: 1px 1px 0 red,
+    2px 2px 0 green,
+    3px 3px 0 blue,
+    4px 4px 0 orange,
+    5px 5px 0 purple,
+    6px 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+div#garden {
+	background-color: darkgreen;
+	width: 80%;
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	/* Transition */
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+    
+    /* NEW1 New transition */
+    transition: width 4s ease-out;
+    
+    /* NEW2 Make the grass round */
+    border-radius: 30%;
+    
+    /* NEW3 Rotate the grass */
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg); /* Safari and Chrome */
+}
+div#garden:hover {
+	background-color: greenyellow;
+	
+	/* NEW1 Add a new transition */	
+	width: 90%;
+	
+}
+
+div#dog {
+	width: 200px;
+	position: relative;
+	left: 2px;
+	/*NEW6 change dog style */
+	top: 50px;
+}
+
+/* NEW5 Add style for the bone */
+div#bone {
+	width: 100px;
+	top: 100px;
+	position: relative;
+}
+
+img {
+	width: 100%;
+}
+
+div#dancingFlower {
+	width: 200px;
+	display: none;
+}
+
+
+
+
+
