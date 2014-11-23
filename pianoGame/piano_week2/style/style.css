@@ -1,0 +1,75 @@
+body{
+background-color:black;
+margin:0;
+font-family:Arial, sans-serif;
+font-weight:400;
+}
+
+div.pianoTop{
+background:url("../images/top.jpg") ;
+margin-bottom:0;
+padding-bottom:50px;
+padding-top:30px;
+width:auto;
+height:40px;
+}
+
+div.rockStar{
+width:600px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.heading{
+color:white;
+display:block;
+float:left;
+font-size:40px;
+line-height:1;
+top:40px;
+}
+
+
+div.pianoKeys{
+width:1024px;
+margin-left:auto;
+margin-right:auto;
+padding:0px;
+cursor:pointer;	
+}
+
+div.key{
+background-color:#FFF;
+width:90px;
+height:400px;
+margin :0px;
+border:1px solid #666666;
+color: #66666;
+}
+
+div.keyboardText{
+width:100%;
+text-align:center;
+font-size:40px;
+position:relative;
+}
+
+div.keyText{
+ bottom:-300px;
+}
+
+
+div.sharp{
+background-color:#111;
+position:absolute;
+float:left;
+width:60px;
+height:250px;
+margin-left:-16px;
+margin-right:-16px;
+border:1px solid blaxk;
+border-radius: 0 0 5px 5px;
+color:red;
+top:120px;
+z-index:2;
+}

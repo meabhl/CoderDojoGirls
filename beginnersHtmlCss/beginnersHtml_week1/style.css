@@ -1,0 +1,17 @@
+body {
+	background-color: lightblue;
+	color: red;
+}
+		
+img {
+	padding-left: 20px;
+}
+
+div#mylogo {
+	background-color: yellow;
+	margin: 30px;
+}
+
+div#container {
+	background-color: hotpink;
+}

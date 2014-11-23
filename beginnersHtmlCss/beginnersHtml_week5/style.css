@@ -1,0 +1,52 @@
+body{
+ background-color:#cc0AC9;
+ color:white;
+}
+
+p{
+ color:blue;
+ font-size:12px;
+ font-family:Georgia;
+}
+
+div#container{
+margin-left:auto;
+margin-right:auto;
+width:960px;
+background-color:#EFACF2;
+}
+
+div#justinVideo{
+margin:100px 400px 75px 100px;
+border-top:5px dotted red;
+border-right:5px solid green;
+border-bottom:5px dashed orange;
+border-left:5px solid green;
+}
+img#imgHeader{
+height:100px;
+width:120px;
+position:relative;
+}
+h1#logoHeader{
+text-align:center;
+position:relative; 
+top:-90;
+color:#7F2DB5;
+}
+
+.coderdojologo{
+background-color:white;
+width:960px;
+height:100px;
+}
+
+div#ted{
+border:5px dotted red;
+padding:50px;
+width:700px;
+height:300px;
+position:relative;
+left:300px;
+}
+

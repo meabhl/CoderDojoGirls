@@ -1,0 +1,91 @@
+<html>
+
+    <head>
+	  <title>DCU Piano Game</title>
+	  <link rel="stylesheet" type="text/css" href="style/style.css"/>
+	  <script type="text/javascript" src="js/piano.js"></script>
+	</head>
+
+	<body>
+		<div class="pianoTop">
+	    	<div class="rockStar">
+		    	<div class="heading">
+		    		<p>Piano Rock Star</p>
+		    	</div>
+				<img id="logo" src="images/coder.png"/>
+				<button class="buttonStyle" type="button" onClick="playScale();">Play Scale</button>				
+			</div>
+		</div>
+
+	  	<div id="piano" class ="pianoKeys">
+			<div id="keyC" class="key"  onclick="pressKey('audioC', this);">
+				<div class="keyText keyboardText">C</div>
+			</div>
+			<div id="sharpC" class="sharp sharpC">
+				<div class="sharpText keyboardText">C#</div>
+			</div>
+
+			<!-- Divs added in week 3 -->
+			<div id="keyD" class="key" onclick="pressKey('audioD', this);">
+				<div class="keyText keyboardText">D</div>
+			</div>
+			<div id="sharpD" class="sharp sharpD" onclick="pressKey('sharpD', this);" >
+				<div class="sharpText keyboardText">D#</div>
+			</div>
+			<div id="keyE" class="key" onclick="pressKey('audioE', this);">
+				<div class="keyText keyboardText">E</div>
+			</div>
+			<div id="keyF" class="key">
+				<div class="keyText keyboardText">F</div>
+			</div>
+
+			<!-- new in Week 4 -->
+			<div id="sharpF" class="sharp">
+				<div class="sharpText keyboardText">F#</div>
+			</div>
+
+			<div id="keyG" class="key">
+				<div class="keyText keyboardText">G</div>
+			</div>
+			
+			<div id="sharpG" class="sharp">
+				<div class="sharpText keyboardText">G#</div>
+			</div>
+			
+			<div id="keyA" class="key">
+				<div class="keyText keyboardText">A</div>
+			</div>
+			<div id="keyB" class="key">
+				<div class="keyText keyboardText">B</div>
+			</div>
+			<div id="keyC1" class="key">
+				<div class="keyText keyboardText">C1</div>
+			</div>
+			<div id="keyD1" class="key">
+				<div class="keyText keyboardText">D1</div>
+			</div>
+			<div id="keyE1" class="key">
+				<div class="keyText keyboardText">E1</div>
+			</div>
+			<div id="keyF1" class="key">
+				<div class="keyText keyboardText">F1</div>
+			</div>
+		</div>
+
+		<!-- new in Week 4 -->
+		<div id="audio">
+			<audio id="audioC">
+				<source src="notes/C4.wav" type="audio/wav"/>
+			</audio>
+			<audio id="audioD">
+				<source src="notes/D4.wav" type="audio/wav"/>
+			</audio>
+			<audio id="audioE">
+				<source src="notes/E4.wav" type="audio/wav"/>
+			</audio>
+		</div>
+
+	</body>
+
+</html>
+*

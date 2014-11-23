@@ -1,0 +1,125 @@
+body {
+	background-color: black;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	font-weight: 400;
+}
+
+div.pianoTop {
+	background: url("../images/top.jpg") ;
+	margin-bottom: 0;
+	padding-bottom: 50px;
+	padding-top: 30px;
+	width: auto;
+	height: 40px;
+}
+
+div.rockStar {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.heading {
+	color: white;
+	display: block;
+	float: left;
+	font-size: 40px;
+	line-height: 1;
+	top: 30px; /*changed from 40px in week3 */
+}
+
+div.heading p {
+   margin: 0px;
+}
+
+
+div.pianoKeys {
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	cursor: pointer;
+	/*float: left;*//*added in week3*//* remove in week 5 */
+}
+
+div.key {
+	background-color: #FFF;
+	width: 90px;
+	height: 400px;
+	margin : 0px;
+	border: 1px solid #666666;
+	color:  #666666;
+	float: left; /*added in week 3 */
+	border-radius:  0 0 10px 10px; /*added in week3*/
+	box-shadow:  0 -10px 2px 0 #888888 inset,
+	            0 -60px 40px 10px #EEEEEE inset;
+}
+
+div.keySelected {
+    box-shadow: 0 -5px 10px -3px #272927 inset !important;
+} 
+
+/* Added in Week 3 */
+img#logo {
+	width: 60px;
+	margin-top: -15px;
+	float: left;
+	padding: 10px;
+}
+
+div.keyboardText {
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+}
+
+div.keyText {
+	bottom: -300px;
+}
+
+
+div.sharp {
+	background-color: #111;
+	position: absolute;
+	float: left;
+	width: 60px;
+	height: 250px;
+	margin-left: -16px;
+	margin-right: -16px;
+	border: 1px solid black; /*fixed in week3 was blaxk */
+	border-radius:  0 0 5px 5px;
+	color: red;
+	/*Top:  120px was removed in week3*/
+	z-index: 2;
+	box-shadow: rgb(48, 48, 48) 0px -9px 10px 9px inset,
+	            rgb(247, 247, 247) 0px -15px 0px 0px inset;
+}
+div.sharpText {
+	bottom: -200px;
+}
+/* Added in week 3 */
+div.sharpC {
+	margin-left: 60px;
+}
+
+/* Added in week 4 */
+div.sharpD {
+	margin-left: 152px;
+}
+
+#sharpF {
+	margin-left: 336px;
+}
+
+#sharpG {
+	margin-left: 428px;
+}
+
+#sharpA {
+	margin-left: 520px;
+}
+
+
+

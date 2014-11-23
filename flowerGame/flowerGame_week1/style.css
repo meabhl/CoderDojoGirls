@@ -1,0 +1,13 @@
+body {
+	background-color: lightgreen;
+	color: darkblue;
+}
+
+div#flower {
+	width: 100px;
+	background-color: yellow;
+}
+
+img {
+	width: 100%;
+}
