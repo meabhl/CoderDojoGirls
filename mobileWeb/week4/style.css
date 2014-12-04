@@ -1,0 +1,54 @@
+body{
+background-image: url(logo.png);
+background-repeat: repeat-x;
+padding-top: 70px;
+}
+
+h1{
+color:#8271f5;
+text-shadow: 10px 8px 8px purple;
+}
+
+h2{
+color:#f571e4;
+}
+
+p#para1{
+color:#3f0760;
+font-size:12;
+font-family:Tahoma;
+}
+
+p#para2{
+color:#0f0217;
+font-size:16;
+font-family:Georgia;
+}
+div#codergirl{
+width:90%;
+height:60%;
+}
+
+.whiteBg {
+	background-color: white;
+}
+
+div#container {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 5px dashed purple;
+	padding: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+			
