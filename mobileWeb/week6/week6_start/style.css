@@ -1,0 +1,83 @@
+body {
+	background-image: url(logo.png);
+	background-repeat: no-repeat;
+	background-color: green;
+	padding-top: 70px;
+}
+
+h1 {
+	color: green;
+	text-shadow: 10px 8px 8px greenyellow;
+}
+
+h2 {
+	color: #66B366;
+}
+
+p#para1 {
+	color: #3f0760;
+	font-size: 12;
+	font-family: Tahoma;
+}
+
+p#para2 {
+	color: #0f0217;
+	font-size: 16;
+	font-family: Georgia;
+}
+div#codergirl {
+	width: 90%;
+	height: 60%;
+}
+
+.whiteBg {
+	background-color: white;
+}
+
+div#container {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 5px inset greenyellow;
+	padding: 5%;
+}
+
+div#birdDiv {
+	position: relative;
+	top: 75px;
+	left: 105px;
+
+	-webkit-animation: moveBird 5s;
+	animation:  moveBird 5s;
+}
+
+@-webkit-keyframes moveBird {
+    from {
+    	left:105px;
+    }
+    to {
+    	left:400px;
+    }
+}
+
+#bird {
+	height: 120px;
+	width: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
