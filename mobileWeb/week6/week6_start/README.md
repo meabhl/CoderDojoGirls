@@ -1,4 +1,4 @@
-# Week 5 January 17th
+# Week 6 January 24th 2015
 Lets add some styling
 - When we click on the CoderDojo girls logo the bird disappears and reappears right? But the logo doesn't
 look like a button - so lets add some style
