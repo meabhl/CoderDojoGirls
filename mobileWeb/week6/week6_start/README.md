@@ -4,17 +4,22 @@ Lets add some styling
 look like a button - so lets add some style
 
 1. Add a different mouse/cursor style
+
 - In style.css find the codergirl div and change the cursor
 --  div#codergirl {
         cursor: pointer;
     }
+NOTE: Some browsers don't  understand cursor: pointer so we can also add cursor: hand
 
-2. How about we stop the whitespace from changing?
--- Because the birddiv has position relative, its taking up space on the page relative to whats around it.
-By changing the positive to absolute we can fix this.
 
-3.  Lets learn how to pass variables into our functions!
-- Remember, a function has one job to do. How can we make our showBird function better?
-- First, change hideBird and showBird to hideImage and showImage, then we can use it again :)
-How do we know which image to hide or show? We use a variable!!
-Pass in the id of the image and then we can create an object.
+2. Lets upload our websites to the internet :)
+
+- First, we need to download FileZilla - [https://filezilla-project.org/download.php?show_all=1
+- Next you need to select Site Manager and enter your details (they are different for everybody). The details will be given to you by the class lead.
+- Hostname: (This is your website address) ______.mycoderdojodcu.com
+- Use FTP
+- Username: dosa84_??????
+- Password: __________
+- Click Connect!
+- Now you can find your website in the left hand side (Local Site) and drag the files over to the server (Remote Site).
+- Now type the hostname in your web browser (Chrome/Firefox)
