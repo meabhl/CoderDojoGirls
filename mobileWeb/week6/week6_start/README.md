@@ -11,7 +11,6 @@ look like a button - so lets add some style
     }
 NOTE: Some browsers don't  understand cursor: pointer so we can also add cursor: hand
 
-
 2. Lets upload our websites to the internet :)
 
 - First, we need to download FileZilla - [https://filezilla-project.org/download.php?show_all=1
