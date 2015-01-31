@@ -14,6 +14,8 @@ NOTE: Some browsers don't  understand cursor: pointer so we can also add cursor:
 2. Lets upload our websites to the internet :)
 
 - First, we need to download FileZilla - [https://filezilla-project.org/download.php?show_all=1
+OR to upload using the web use: http://newcp.host.ie:8080/psoft/servlet/psoft.hsphere.CP/
+
 - Next you need to select Site Manager and enter your details (they are different for everybody). The details will be given to you by the class lead.
 - Hostname: (This is your website address) ______.mycoderdojodcu.com
 - Use FTP
@@ -22,3 +24,4 @@ NOTE: Some browsers don't  understand cursor: pointer so we can also add cursor:
 - Click Connect!
 - Now you can find your website in the left hand side (Local Site) and drag the files over to the server (Remote Site).
 - Now type the hostname in your web browser (Chrome/Firefox)
+
