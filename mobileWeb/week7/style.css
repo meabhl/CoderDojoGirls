@@ -46,20 +46,37 @@ div#container {
 }
 
 div#birdDiv {
-	position: relative;
+	position: absolute;
 	top: 75px;
-	left: 105px;
+	left: 0;
 
-	-webkit-animation: moveBird 5s;
-	animation:  moveBird 5s;
+	-webkit-animation: moveRight 5s linear 0,
+						moveLeft 5s linear 5s;
+	animation:  moveRight 5s,
+				moveLeft 5s linear 5s;
 }
 
-@-webkit-keyframes moveBird {
+@-webkit-keyframes moveRight {
     from {
-    	left:105px;
+    	left:0;
+		top: 0;
     }
     to {
-    	left:400px;
+    	left:90%;
+		top: 50%;
+    }
+}
+
+@-webkit-keyframes moveLeft {
+    from {
+    	left:100%;
+		transform: rotateY(180deg);
+		top: 50%
+    }
+    to {
+    	left: 0;
+		top: 0;
+		transform: rotateY(180deg);
     }
 }
 
