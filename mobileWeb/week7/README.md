@@ -7,12 +7,15 @@ First, lets allow our bird to fly all the way from the top left. She has positio
 move outside the div id container. How about we change this to position:absolute so she can fly wherever
  she likes?
  In our _style.css_ change relative to absolute for our div with id _birdDiv_
+
  ```css
 div#birdDiv {
 	position: absolute;
  ```
+
 -- *New function* to move the bird left
 In our style.css_ file create a new animation
+
 ```css
 @-webkit-keyframes moveLeft {
     from {
@@ -24,7 +27,8 @@ In our style.css_ file create a new animation
 }
 ```
 
-and call our flyLeft animation from our birdDiv style:
+and call our flyLeft animation from our birdDiv style
+
 ```css
 -webkit-animation: moveRight 5s,
 						moveLeft 5s linear 5s;
