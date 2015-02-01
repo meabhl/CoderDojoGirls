@@ -30,10 +30,16 @@ In our style.css_ file create a new animation
 and call our flyLeft animation from our birdDiv style
 
 ```css
--webkit-animation: moveRight 5s,
+div#birdDiv {
+	position: absolute;
+	top: 75px;
+	left: 0;
+
+	-webkit-animation: moveRight 5s,
 						moveLeft 5s linear 5s;
 	animation:  moveRight 5s,
 				moveLeft 5s linear 5s;
+}
 ```
 Notice there are a few extra _parameters_ for our animation?
 - moveLeft is the animation name
