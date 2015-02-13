@@ -4,6 +4,8 @@ This week we are going to
 - Lets update Style ready for our tree to grow out of the ground
 Edit style.css. How do we set the height of the container to only take up the space that we see?
 Lets add height:
+
+*style.css*
  ```css
 div#container {
 	width: 80%;
@@ -18,6 +20,7 @@ div#container {
 
  - Lets make sure our tree has enough room to grow. To put our logos at the top right lets try adding 'float: right'
 
+*style.css*
  ```css
 div#codergirl {
 	width: 90%;
@@ -28,6 +31,8 @@ div#codergirl {
 }
  ```
 Its also taking up a bit too much space so lets decrease the width to the same width as the pictures
+
+*style.css*
  ```css
 div#codergirl {
 	width: 260px;
@@ -40,6 +45,8 @@ div#codergirl {
 And in our html lets move it to the top of the page so we have room for the tree at the bottom
 index.html
 Cut (ctrl and x) and paste (ctrl and v) this div into the top of the container div.
+
+*index.html*
 ```html
 <div id="codergirl" class="button">
 			<img src="codergirl.jpg" onClick="hideBird()"  ondblclick="showBird()">
@@ -49,6 +56,8 @@ Cut (ctrl and x) and paste (ctrl and v) this div into the top of the container d
 
 Now how about we add some grass to put (plant) our tree in it! (Move the <div> with id 'tree' into a new div
 We'll add the html first
+
+*index.html*
 ```html
  <div id="grass">
           <div id="tree">
@@ -60,6 +69,8 @@ We'll add the html first
 
 We can add some cool css for the grass div to make it 'stick' to the bottom of the page.
 Open style.css and add a new style
+
+*style.css*
 ```css
 div#grass {
     position:fixed;
@@ -73,6 +84,8 @@ div#grass {
 ```
 
 How do we get the twig image to stay at the bottom of the grass? lets add a new style to style.css
+
+*style.css*
 ```css
 div#grass img {
    position: absolute;
@@ -87,6 +100,8 @@ This new style means _Change the style of the <img> that is in the div with the 
 
 Lets change the picture of the twig after we click it 3 times - it can turn into a lovely little tree!
 We need a new 'if' statement that says 'If the counter (the number of times we've clicked the twig) is equal to 3 THEN we turn the twig into a tree!
+
+*javascript.js*
 ```javascript
 function grow() {
     counter = counter + 1;
@@ -105,11 +120,15 @@ Wait.. javascript errors? Hmmmm Oh yeah, we never created the twigToTree functio
 First we need to make sure we can get our sapling variable
 in javascript.js
 Add this to the top of the file
+
+*javascript.js*
 ```javascript
 var sapling;
 ```
 
 In the onload function add
+
+*javascript.js*
 ```javascript
 onload = function () {
     sapling = document.getElementById("sapling");
@@ -117,6 +136,8 @@ onload = function () {
 ```
 Now we have _initialized_ our sapling variable and we can use it anywhere in our javascript.js file.
 How about we do the same with our twig variable so we only need to initialize it once?
+
+*javascript.js*
 ```javascript
 onload = function () {
     sapling = document.getElementById("sapling");
@@ -125,6 +146,7 @@ onload = function () {
 ```
 We can remove twig = document.getElementById("twig"); from increaseHeight and increaseWidth
 
+*javascript.js*
 ```javascript
 function twigToTree() {
     twig.style.display = "none";
@@ -133,6 +155,8 @@ function twigToTree() {
 ```
 
 To make my page a little prettier we can change the background color of the entire page in the index.html
+
+*style.css*
 ```css
 body {
 	background-image: url(logo.png);
@@ -145,14 +169,14 @@ body {
 I also changed the style of the tree to hidden for when we load the page instead of doing this in javascript in the onload function.
 THis is because the tree is showing up as a flicker when we first load the page. ITs better to make changes in the style.css
 
-style.css
+*style.css*
 ```css
 .hidden {
     display: none;
 }
 ```
 
-index.html
+*index.html*
 ```html
 <img id="sapling" src="sapling.png" class="hidden"/>
 ```
