@@ -1,7 +1,7 @@
 body {
 	background-image: url(logo.png);
 	background-repeat: no-repeat;
-	background-color: green;
+	background-color: #6ec5fb;
 	padding-top: 70px;
 }
 
@@ -16,20 +16,21 @@ h2 {
 
 p#para1 {
 	color: #3f0760;
-	font-size: 12;
+	font-size: 12pt;
 	font-family: Tahoma;
 }
 
 p#para2 {
 	color: #0f0217;
-	font-size: 16;
+	font-size: 16pt;
 	font-family: Georgia;
 }
 div#codergirl {
-	width: 90%;
+	width: 260px;
 	height: 60%;
 	cursor: pointer;
 	cursor: hand;
+    float: right;
 }
 
 .whiteBg {
@@ -43,8 +44,23 @@ div#container {
 	background-color: white;
 	border: 5px inset greenyellow;
 	padding: 5%;
+    height: 40%;
 }
 
+div#grass {
+    position:fixed;
+    left:0;
+    bottom:0;
+    height:200px;
+    width:100%;
+    background-image:url('grass.jpg');
+    background-size: 200px 200px;
+}
+
+div#grass img {
+   position: absolute;
+   bottom: 0;
+}
 div#birdDiv {
 	position: absolute;
 	top: 75px;
@@ -87,6 +103,10 @@ div#birdDiv {
 
 .button {
 	cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
 
 

@@ -1,10 +1,12 @@
-onload = function () {
-    sapling.style.display = "none";
-};
-
 var increaseBy = 30;
 var counter = 0;
 var twig;
+var sapling;
+
+onload = function () {
+    sapling = document.getElementById("sapling");
+    twig = document.getElementById("twig");
+};
 
 function grow() {
     counter = counter + 1;
@@ -12,19 +14,24 @@ function grow() {
         increaseWidth();
         increaseHeight();
     }
+
+    if (counter === 3) {
+      twigToTree();
+    }
+}
+
+function twigToTree() {
+    twig.style.display = "none";
+    sapling.style.display = "block";
 }
 
 function increaseWidth() {
-    twig = document.getElementById("twig");
     var width = parseInt(twig.offsetWidth);
-
     width = width + increaseBy;
     twig.style.width = width + "px";
 }
 
 function increaseHeight() {
-    twig = document.getElementById("twig");
-
     var height = parseInt(twig.offsetHeight);
     height = height + increaseBy;
 
