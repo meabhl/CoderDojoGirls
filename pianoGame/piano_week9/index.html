@@ -1,149 +1,72 @@
 <html>
-
-    <head>
-	  <title>DCU Piano Game</title>
-	  <link rel="stylesheet" type="text/css" href="style/style.css"/>
-	  <script type="text/javascript" src="js/piano.js"></script>
+	<head>
+	<style>
+	body{
+		background-color:#d9b3ff;
+	}
+	h1{
+		text-align:center;
+	}
+	.Button_Style{
+		background-color:#ff99bb;
+		width:100px;
+		height:30px;
+		font-size:14pt;
+		border: 2px solid black;
+	}
+	</style>
 	</head>
-
 	<body>
-		<div class="pianoTop">
-	    	<div class="rockStar">
-		    	<div class="heading">
-		    		<p>Piano Rock Star</p>
-		    	</div>
-				<img id="logo" src="images/coder.png"/>
-				<button class="buttonStyle" type="button" onClick="playScale();">Play Scale</button>				
-			</div>
-		</div>
-
-	  		<div id="piano" class ="pianoKeys">
-			<div id="keyC" class="key"  onclick="pressKey('audioC', this);">
-				<div class="keyText keyboardText">C</div>
-			</div>
-			<div id="sharpC" class="sharp sharpC">
-				<div class="sharpText keyboardText">C#</div>
-			</div>
-
-			<!-- Divs added in week 3 -->
-			<div id="keyD" class="key" onclick="pressKey('audioD', this);">
-				<div class="keyText keyboardText">D</div>
-			</div>
-			<div id="sharpD" class="sharp sharpD ">
-				<div class="sharpText keyboardText">D#</div>
-			</div>
-			<div id="keyE" class="key" onclick="pressKey('audioE', this);">
-				<div class="keyText keyboardText">E</div>
-			</div>
-			<div id="keyF" class="key" onclick="pressKey('audioF', this);">
-				<div class="keyText keyboardText">F</div>
-			</div>
-
-			<!-- new in Week 4 -->
-			<div id="sharpF" class="sharp sharpF" >
-				<div class="sharpText keyboardText">F#</div>
-			</div>
-
-			<div id="keyG" class="key" onclick="pressKey('audioG', this);">
-				<div class="keyText keyboardText">G</div>
-			</div>
-			
-			<div id="sharpG" class="sharp sharpG">
-				<div class="sharpText keyboardText">G#</div>
-			</div>
-			
-			<div id="keyA" class="key" onclick="pressKey('audioA', this);">
-				<div class="keyText keyboardText">A</div>
-			</div>
-			<!-- added in week 8 -->
-			<div id="sharpA" class="sharp sharpA">
-					<div class="sharpText keyboardText">A#</div>
-				</div>
-			<div id="keyB" class="key" onclick="pressKey('audioB', this);">
-				<div class="keyText keyboardText">B</div>
-			</div>
-			<div id="keyC1" class="key" onclick="pressKey('audioC5', this);">
-				<div class="keyText keyboardText">C1</div>
-			</div>
-			<!-- added in week 8 -->
-			<div id="sharpC1" class="sharp sharpC1">
-				<div class="sharpText keyboardText">C#</div>
-			</div>
-			<div id="keyD1" class="key" onclick="pressKey('audioD5', this);">
-				<div class="keyText keyboardText">D1</div>
-			</div>
-			<!-- added in week 8 -->
-			<div id="sharpD1" class="sharp sharpD1">
-					<div class="sharpText keyboardText">D#</div>
-			</div>
-			<div id="keyE1" class="key" onclick="pressKey('audioE5', this);">
-				<div class="keyText keyboardText">E1</div>
-			</div>
-			<div id="keyF1" class="key" onclick="pressKey('audioF5', this);">
-				<div class="keyText keyboardText">F1</div>
-			</div>
-		</div>
-
-		<!-- new in Week 4 -->
-		<div id="audio">
-			<audio id="audioC">
-				<source src="notes/C4.wav" type="audio/wav"/>
-			</audio>
-			<audio id="audioD">
-				<source src="notes/D4.wav" type="audio/wav"/>
-			</audio>
-			<audio id="audioE">
-				<source src="notes/E4.wav" type="audio/wav"/>
-			</audio>
-			 <!--Added the rest of the notes in week 8 -->
-            <audio id="audioE" >
-                <source src="notes/E4.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioF" >
-                <source src="notes/F4.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioFsharp" >
-                <source src="notes/F4sharp.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioG" >
-                <source src="notes/G4.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioGsharp" >
-                <source src="notes/G4sharp.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioA" >
-                <source src="notes/A4.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioAsharp" >
-                <source src="notes/A4sharp.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioB" >
-                <source src="notes/B4.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioC5" >
-                <source src="notes/C5.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioC5sharp" >
-                <source src="notes/C5sharp.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioD5" >
-                <source src="notes/D5.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioD5sharp" >
-                <source src="notes/D5sharp.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioE5" >
-                <source src="notes/E5.wav" type="audio/wav"/>
-            </audio>
-            <audio id="audioF5" >
-                <source src="notes/F5.wav" type="audio/wav"/>
-            </audio>
-			<!--added in week 9 -->
-			<audio id="audioCsharp" >
-                <source src="notes/C4sharp.wav" type="audio/wav"/>
-            </audio>
-		</div>
+		<h1>Secret Messages</h1>
+		
+		<h3>Encryption</h3>
+		
+		<p>Please enter a message and a key</p>
+		
+		<table>
+			<tr>
+				<td>Please enter your message</td>
+				<td><input type="text" id="strMessage" name="strMessage" width="150px;"></td>
+			</tr>
+			<tr>
+				<td>Please enter your key</td>
+				<td><input type="text" id="strKey" name="strKey" width="150px;"></td>
+			</tr>
+		</table>
+		
+		<input type="button" id="btn_Encrypt" name="btn_Encrypt" value="Click Me" onclick="fn_TestFunction();" class="Button_Style">                                     
+		
+	<script type="text/javascript">
+	
+	function fn_TestFunction(){
+		//code goes here
+		var strMessage = document.getElementById('strMessage').value;
+		var strKey = document.getElementById('strKey').value;
+		alert(strMessage);
+		alert(strKey);
+	}
+	
+	</script>
 	</body>
+<html>
 
-</html>
-*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
