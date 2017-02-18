@@ -1,0 +1,66 @@
+<html>
+	<head>
+	<style>
+	body{
+		background-color:#d9b3ff;
+	}
+	h1{
+		text-align:center;
+	}
+	.Button_Style{
+		background-color:#ff99bb;
+		width:100px;
+		height:30px;
+		font-size:14pt;
+		border: 2px solid black;
+	}
+	</style>
+	</head>
+	<body>
+		<h1>Secret Messages</h1>
+		
+		<h3>Encryption</h3>
+		
+		<p>Please enter a message and a key</p>
+		
+		<table>
+			<tr>
+				<td>Please enter your message</td>
+				<td><input type="text" id="strMessage" name="strMessage" width="150px;"></td>
+			</tr>
+			<tr>
+				<td>Please enter your key</td>
+				<td><input type="text" id="strKey" name="strKey" width="150px;"></td>
+			</tr>
+		</table>
+		
+		<input type="button" id="btn_Encrypt" name="btn_Encrypt" value="Click Me" onclick="fn_TestFunction();" class="Button_Style">                                     
+		
+	<script type="text/javascript">
+	
+	function fn_TestFunction(){
+		//code goes here
+		var strMessage = document.getElementById('strMessage').value;
+		var strKey = document.getElementById('strKey').value;
+		alert(strMessage);
+		alert(strKey);
+	}
+	
+	</script>
+	</body>
+<html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
